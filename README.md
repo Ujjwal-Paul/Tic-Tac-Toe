@@ -3,7 +3,7 @@
 Welcome to my Tic Tac Toe game! This web application is a simple and entertaining implementation of the classic Tic Tac Toe game with cool animations. It is designed to be responsive, providing an enjoyable experience on various devices.
 
 ## Live Demo
-Check out the live demo <a href="https://project-tictactoe-ujjwal.netlify.app/" target="_blank">here</a>.
+Check out the live demo [here](https://project-tictactoe-ujjwal.netlify.app/){:target="_blank" rel="noopener noreferrer"}.
 
 ## Features
 
