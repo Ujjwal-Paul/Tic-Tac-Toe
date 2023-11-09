@@ -3,7 +3,7 @@
 Welcome to my Tic Tac Toe game! This web application is a simple and entertaining implementation of the classic Tic Tac Toe game with cool animations. It is designed to be responsive, providing an enjoyable experience on various devices.
 
 ## Live Demo
-Check out the live demo [here](https://project-tictactoe-ujjwal.netlify.app).
+Check out the live demo <a href="https://project-tictactoe-ujjwal.netlify.app" target="_blank">here</a>.
 
 ## Features
 
@@ -16,7 +16,7 @@ Check out the live demo [here](https://project-tictactoe-ujjwal.netlify.app).
 
 ## How to Play
 
-1. Visit the [live demo](https://project-tictactoe-ujjwal.netlify.app).
+1. Visit the <a href="https://project-tictactoe-ujjwal.netlify.app" target="_blank">live demo</a>.
 2. Choose your preferred play mode: Player vs Player or Player vs CPU.
 3. Start a new game.
 4. Take turns with your opponent or the computer to make your move.
