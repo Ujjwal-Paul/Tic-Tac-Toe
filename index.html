@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="start-choice-box ">
+            <div class="logo">
+                <div class="shape-x">
+                    <div class="ln"></div>
+                    <div class="ln l1"></div>
+                </div>
+                <div class="shape-o"></div>
+            </div>
+
+            <div class="choice">
+                <p class="message">PICK PLAYER 1'S MARK</p>
+
+                <div class="options">
+                    <div class="types" id="type-x">
+                        <div class="shape-x">
+                            <div class="ln"></div>
+                            <div class="ln l1"></div>
+                        </div>
+                    </div>
+                    <div class="types" id="type-o">
+                        <div class="shape-o"></div>
+                    </div>
+                </div>
+
+                <p class="message m1">REMEMBER: X GOES FIRST</p>
+            </div>
+
+            <div class="new-game" val="1">NEW GAME (VS CPU)</div>
+            <div class="new-game player" val="0">NEW GAME (VS PLAYER)</div>
+        </div>
+
+
+        <div class="playing hide">
+
+            <div class="header">
+                <div class="logo">
+                    <div class="shape-x">
+                        <div class="ln"></div>
+                        <div class="ln l1"></div>
+                    </div>
+                    <div class="shape-o"></div>
+                </div>
+
+                <div class="turn">X TURN</div>
+
+                <img class="clear" src="./img/restart.svg" alt="">
+            </div>
+
+            <div class="board">
+                <div class="set">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="set s1">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+
+                <div class="cells">
+                    <div class="cell" i="0" j="0" pos="00"></div>
+                    <div class="cell" i="0" j="1" pos="01"></div>
+                    <div class="cell" i="0" j="2" pos="02"></div>
+                    <div class="cell" i="1" j="0" pos="10"></div>
+                    <div class="cell" i="1" j="1" pos="11"></div>
+                    <div class="cell" i="1" j="2" pos="12"></div>
+                    <div class="cell" i="2" j="0" pos="20"></div>
+                    <div class="cell" i="2" j="1" pos="21"></div>
+                    <div class="cell" i="2" j="2" pos="22"></div>
+
+                    <div class="win-line hide">
+                        <div class="inner-line"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="score">
+                <div class="cur-score">
+                    <p class="info player1-info">X (YOU)</p>
+                    <p class="scores player1-score">0</p>
+                </div>
+                <div class="cur-score">
+                    <p class="info">TIES</p>
+                    <p class="scores ties-score">0</p>
+                </div>
+                <div class="cur-score">
+                    <p class="info player2-info">O (CPU)</p>
+                    <p class="scores player2-score">0</p>
+                </div>
+            </div>
+
+            <div class="reset">NEW GAME</div>
+        </div>
+
+
+        <div class="result hide">
+            <div class="message-box">
+                <div class="won">YOU WON!</div>
+                <div class="takes-round">X TAKES THE ROUND</div>
+                <div class="choices">
+                    <div class="btn quit">QUIT</div>
+                    <div class="btn nxt">NEXT ROUND</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
