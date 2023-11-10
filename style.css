@@ -158,6 +158,7 @@ body {
 
 .playing {
     position: relative;
+    /* background: rgb(130, 130, 130);/************************ */
 }
 
 .header {
@@ -192,6 +193,22 @@ body {
     border-radius: 5px;
     background: #a8bec9;
     box-shadow: 0 4px 0 #5f7882;
+}
+
+.header .refresh {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    right: 18px;
+    top: -26px;
+    color: #192a32;
+    background-color: #2ec4be;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .playing .board {
