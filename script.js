@@ -11,6 +11,7 @@ const playingHeader = playing.querySelector('.header');
 const playingTurn = playingHeader.querySelector('.turn');
 const board = playing.querySelector('.board');
 const cells = board.querySelector('.cells');
+const refresh = playingHeader.querySelector('.refresh');
 
 const result = document.querySelector('.result');
 const wonMessage = document.querySelector('.won');
@@ -63,6 +64,10 @@ startNewGame.forEach((e) => {
 
         newScoreBoard();
         cleanBoard();
+
+        refreshCnt = 5;
+        refresh.style.background = "#2ec4be";
+        updateRefreshCount();
     })
 })
 
@@ -79,6 +84,7 @@ let anyWin = 0;
 let curTurn = 1; // 1 = X, 0 = O
 let whoWin = -1; // 1 = X, 0 = O
 let remainTurns = 9;
+let refreshCnt = 5;
 
 
 function addCross(target) {
@@ -327,6 +333,10 @@ function changeTurn() {
     playingTurn.innerHTML = `${curTurn == 1? 'X' : 'O'} TURN`;
 }
 
+function updateRefreshCount() {
+    refresh.innerHTML = refreshCnt;
+}
+
 
 /*********************************SCORE CALCULATION**********************************/
 
@@ -374,7 +384,14 @@ reset.addEventListener('click', () => {
 })
 
 clear.addEventListener('click', () => {
-    if(anyWin == 0) cleanBoard();
+    if(anyWin == 0 && refreshCnt > 0) {
+        refreshCnt--;
+        updateRefreshCount();
+        cleanBoard();
+    }
+    if(refreshCnt == 0) {
+        refresh.style.background = "#dc2f02";
+    }
 })
 
 
@@ -482,7 +499,6 @@ function showResultMessage(win) {
     showingResult = 1;
     result.classList.remove('hide');
     playing.style.filter = "blur(1px)";
-
 
     let color, winner, tookRound;
     if(win == "X") color = "#2ec4be";
