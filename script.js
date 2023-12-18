@@ -376,7 +376,6 @@ function updateScoreBoard() {
     tiesScore.innerHTML = scoreTie;
 }
 
-
 reset.addEventListener('click', () => {
     playing.classList.add('hide');
     startChoiceBox.classList.remove('hide');
@@ -395,7 +394,7 @@ clear.addEventListener('click', () => {
 })
 
 
-/****************************PLAY WITH CPU ALGORITHM MEDIUM LEVEL******************************/
+/****************************PLAY WITH CPU ALGORITHM******************************/
 
 let cpuTurn = 0; // 1 = X, 0 = O
 
