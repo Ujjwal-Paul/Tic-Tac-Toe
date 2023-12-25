@@ -1,9 +1,6 @@
 # Tic Tac Toe Game
 
-Welcome to my Tic Tac Toe game! This web application is a simple and entertaining implementation of the classic Tic Tac Toe game with cool animations. It is designed to be responsive, providing an enjoyable experience on various devices.
-
-## Live Demo
-Check out the live demo [here](https://ujjwal-paul.github.io/Tic-Tac-Toe/).
+Welcome to my Tic Tac Toe game! This web application is a simple and entertaining implementation of the classic Tic Tac Toe game with cool animations. It is designed to be responsive, providing an enjoyable experience on various devices. Check out the live demo [here](https://ujjwal-paul.github.io/Tic-Tac-Toe/).
 
 ## Features
 
@@ -22,9 +19,3 @@ Check out the live demo [here](https://ujjwal-paul.github.io/Tic-Tac-Toe/).
 4. Take turns with your opponent or the computer to make your move.
 5. The first player to get three in a row (horizontally, vertically, or diagonally) wins!
 6. Have fun playing!
-
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
