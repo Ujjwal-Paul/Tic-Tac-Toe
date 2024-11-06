@@ -9,7 +9,7 @@ Welcome to my Tic Tac Toe game! This web application is a simple and entertainin
 - **User-friendly Interface**: Simple and intuitive interface for a great user experience.
 - **Play Modes**:
   - **Player vs Player (PvP)**: Challenge your friend and play against each other.
-  - **Player vs CPU (PvC)**: Play against a computer opponent with adjustable difficulty levels.
+  - **Player vs CPU (PvC)**: Play against a computer opponent with medium difficulty level.
 
 ## How to Play
 
